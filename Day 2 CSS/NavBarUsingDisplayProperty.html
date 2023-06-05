@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Using Display Property</title>
+    <style>
+        *
+        {
+            bottom: 1px solid red;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* While Making Navigation Bar try to write code in the ul tags only */
+        ul{
+            list-style: none;
+            /* text-align:end that makes the nav bar at the right end side */
+            text-align: end;
+            padding: 30px;
+            background: black;
+            font-style: bold;
+            color: white;
+           font-size: 20px;
+           margin: 10px;
+        }
+        li{
+            display: inline;
+            /* to give spacing between two nav elements use padding in the li elements */
+            padding: 20px;
+        }
+        /* Pseudo class selector using for hovering */
+        li:hover{
+            color: red;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+</body>
+</html>
