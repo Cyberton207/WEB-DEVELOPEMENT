@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice Set 1</title>
+    <style>
+        /* * is a Universal Selector and can be used to apply the whole document */
+        /* Below is the Element Selector it applies to the whole body */
+        
+       body{
+        font-size:20px;
+       }
+       /* Below case is Pseudo Selectors which is based on the state of the elements */
+       p:hover{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       /* . symbol show case that it is class and class can applies or used multiple times*/
+       .test{
+         font-family: cursive;
+         background-color: aliceblue;
+        
+       }
+       /* # show it as id and id can only */
+       /* below is also known as grouping selector */
+      
+       #first,#second{
+        color: red;
+       }
+       /* Below is the Nested Selector in which we applied style to the first paragraph of having id #first */
+       #first > p {
+        color: darkgreen;
+       }
+       
+       /* #second{
+        color: blue;
+       } */
+       #third{
+        color: deeppink;
+       }
+    .headText{
+        background-color:rgb(180, 169, 127);
+        font-style: italic;
+       }
+    .symbol{
+        background-color:yellowgreen;
+        font-style: bold;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selectors in HTML</h1>
+    </header>
+    <main>
+        <article id="first">
+            <h2>Element Selector</h2>
+            <p>The Element Selectors select the <span class="headText">HTML</span> elements based on the element name</p>
+        </article>
+        <article id="second" class="test">
+            <h2>Id Selector</h2>
+            <p>The id selector is a <span class="headText">CSS</span> selector that is used to select an element with a specific id attribute. The id attribute is a unique identifier for an element, so the id selector can only select one element at a time. The id selector is written as a hash <span class="symbol">(#)</span> character followed by the id of the element.</p>
+        </article>
+        <article id="third">
+            <h2>Class Selector</h2>
+            <p>A class selector is a <span class="headText">CSS</span> selector that is used to select elements with a specific class attribute. The class attribute is used to group elements together, so the class selector can select multiple elements at a time. The class selector is written as a period <span class="symbol">(.)</span> character followed by the name of the class.</p>
+    </main>
+</body>
+</html>
