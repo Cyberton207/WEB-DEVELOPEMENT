@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Container</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        background-color: gainsboro;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 2px solid red;
+        overflow: auto;
+      }
+      .red {
+        background-color: red;
+        float: left;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box red">Box1</div>
+      <div class="box blue">Box2</div>
+      <div class="box green">Box3</div>
+      <div class="box yellow">Box4</div>
+    </div>
+  </body>
+</html>
