@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Practice 6</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 2px;
+      }
+      .box {
+        border: 2px solid blue;
+        margin: 2px;
+        padding: 20px;
+        text-align: center;
+      }
+      #box1 {
+        background-color: aquamarine;
+        grid-column: 1 / span 4;
+        grid-row: 1;
+      }
+      #box2 {
+        background-color: yellowgreen;
+        grid-row: 1 / span 3;
+        grid-row: 2;
+      }
+      #box3 {
+        background-color: darkcyan;
+      }
+      #box4 {
+        background-color: cornflowerblue;
+      }
+      #box5 {
+        background-color: darkorchid;
+        grid-column: 2 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Header</div>
+      <div class="box" id="box2">Menu</div>
+      <div class="box" id="box3">Main</div>
+      <div class="box" id="box4">Right</div>
+      <div class="box" id="box5">Footer</div>
+    </div>
+  </body>
+</html>

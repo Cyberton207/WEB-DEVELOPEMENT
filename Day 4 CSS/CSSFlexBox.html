@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex Box</title>
+    <style>
+      /* Display:Flex 
+        1) Flex Makes the ALL children items in one line
+        2) Flex Direction Decides the direction of the flex it has values row,column,column-reverse, row-reverse
+        3)Flex-wrap: When Flex Wrap Occurs when your screen size become smaller so the container size becomes smaller so if the items are not conditioned to that are completely arranged in one row then it shifts to the another 2nd row
+        4) Justify-content = By These property it makes the movement/align to the children items to the Main X Axis
+        5)Align-items = Make the align/movement ALl children items to the Y Axis
+        ---------------------------------------------
+        IMP POINTS
+        1) when we make the display as flex then justify content and align items is the most important properties
+        
+        */
+      .container {
+        height: 400px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .box {
+        border: 2px solid blue;
+        margin: 10px;
+      }
+      #box-1 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- .container>.box#box-$>box-{$}
+        .container>.box#box-${$}*8 -->
+      <div class="container">
+        <div class="box" id="box-1">Box-1</div>
+        <div class="box" id="box-2">Box-2</div>
+        <div class="box" id="box-3">Box-3</div>
+        <div class="box" id="box-4">Box-4</div>
+        <div class="box" id="box-5">Box-5</div>
+        <div class="box" id="box-6">Box-6</div>
+        <div class="box" id="box-7">Box-7</div>
+        <div class="box" id="box-8">Box-8</div>
+      </div>
+    </div>
+  </body>
+</html>
