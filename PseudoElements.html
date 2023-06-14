@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo Elements</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --background-color: black;
+        --text-color: #f1f1f1;
+      }
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px;
+      }
+      h1::first-letter {
+        color: red;
+        font-size: 50px;
+      }
+      p {
+        line-height: 1.5;
+      }
+      p::first-letter {
+        color: green;
+        font-size: 30px;
+      }
+      p::after {
+        content: "This is a pseudo element";
+        color: yellow;
+        font-size: 20px;
+      }
+      p::before {
+        content: "This is a pseudo element";
+        color: yellow;
+        font-size: 20px;
+      }
+      p::selection {
+        background-color: #090580;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Pseudo Elements are denoted by the ::</p>
+    <h1>Hello World</h1>
+    <h2>How're You</h2>
+    <p>
+      ure. A pseudo-element is a special type of selector in CSS that allows you
+      to style a specific part of an element without having to add any
+      additional HTML. For example, you could use the ::first-letter
+      pseudo-element to style the first letter of a paragraph, or the ::after
+      pseudo-element to add a decorative element after an element.
+      Pseudo-elements are prefixed with two colons (::). There are many
+      different pseudo-elements available, each with its own specific purpose.
+      Some of the most commonly used pseudo-elements include:
+    </p>
+    <p>::before: Adds a decorative element before an element.</p>
+
+    <p>
+      Pseudo-elements can be a powerful tool for adding visual interest and
+      functionality to your web pages. If you're not already using them, I
+      encourage you to give them a try.
+    </p>
+  </body>
+</html>

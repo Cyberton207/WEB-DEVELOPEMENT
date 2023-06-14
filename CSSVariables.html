@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      :root {
+        --main-bg-color: #f1f1f1;
+        --box-color: rgb(97, 227, 136);
+        --box-shadow-color: blue;
+      }
+      .container {
+        display: flex;
+      }
+      .box {
+        /* --main-bg-color: #f1f1f1; */
+        width: 200;
+        height: 200px;
+        background-color: var(--box-color);
+        border: 2px solid red;
+        margin: 2px 9px;
+        padding: 20px;
+        box-shadow: 3px 3px var(--box-shadow-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>
